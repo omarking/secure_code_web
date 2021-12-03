@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Cargar contenido dinámico en bootstrap modal PHP - BaulPHP</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+
+                <ul class="nav nav-pills">
+                    <li role="presentation" class="active"><a href="index.php">Inicio</a></li>
+
+                </ul>
+            </div>
+
+            <div class="panel-body">
+
+                <h2>Cargar contenido dinámico en bootstrap modal PHP</h2>
+                <!-- Desencadenar el modal con un botón -->
+                <br> <button type="button" class="btn btn-primary openBtn">Abrir Modal</button>
+
+                <button type="button" class="btn btn-primary openBtn2">Abrir Modal 2</button>
+                <br><br>
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog">
+
+                        <!-- Modal contenido-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Bootstrap Modal con contenido dinamico PHP - MySQL</h4>
+                            </div>
+                            <div class="modal-body">
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="panel-footer">BaulPHP</div>
+        </div>
+        <!--Panel cierra-->
+
+    </div>
+
+    <script>
+        $('.openBtn').on('click', function() {
+            $('.modal-body').load('contenido.html', function() {
+                $('#myModal').modal({
+                    show: true
+                });
+            });
+        });
+
+        $('.openBtn2').on('click', function() {
+            $('.modal-body').load('CargarContenido.php?id=2', function() {
+                $('#myModal').modal({
+                    show: true
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -23,7 +23,7 @@ class PushNotification{
         // Set POST variables
         $url = 'https://fcm.googleapis.com/fcm/send';
         $headers = array(
-                    'Authorization: key=AAAA5h5Rb58:APA91bHSAO5-I3Pxd-XdJ0pWrgJOAqO4kEZSlgrSRV9vTuWAQ4j6T-wpcUJGwNIPglTy7gt6rTP9UL_W7_S5FMC09Xf5YjNqtxwDAJgHIjzMqrBpP-k2HYxg9sq3D2sGaSTpyNCejD18',
+                    'Authorization: key=API___KEY',
                     'Content-Type: application/json'
                     );
                     

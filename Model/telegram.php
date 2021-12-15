@@ -3,8 +3,8 @@
 class Telegram{
 
 
-  public $token = "2040817676:AAFe3zXvBL63TBFbn7o8McUxcj--66c3Luc";
-  public$id = "-1001708737578";
+  public $token = "token";
+  public$id = "chat_id";
   
   public function enviarTelegram( $caabecera_message,$uubicacion_calle,$uubicacion_municipio,$udetalle_message,$chatID){
   $telegram= new Telegram();

@@ -23,11 +23,11 @@ $mail->SMTPSecure = 'tls';
 //Tenemos que usar gmail autenticados, así que esto a TRUE
 $mail->SMTPAuth   = true;
 //Definimos la cuenta que vamos a usar. Dirección completa de la misma
-$mail->Username   = "oscarrdz6808@gmail.com";
+$mail->Username   = "correo";
 //Introducimos nuestra contraseña de gmail
-$mail->Password   = "oscar4321";
+$mail->Password   = "password";
 //Definimos el remitente (dirección y, opcionalmente, nombre)
-$mail->SetFrom('oscarrdz6808@gmail.com', 'SecureCode');
+$mail->SetFrom('correo', 'SecureCode');
 //Esta línea es por si queréis enviar copia a alguien (dirección y, opcionalmente, nombre)
 $mail->AddReplyTo('oscarrdz6808@gmail.com','El de la réplica');
 //Y, ahora sí, definimos el destinatario (dirección y, opcionalmente, nombre)
